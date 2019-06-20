@@ -1,0 +1,3 @@
+#!/bin/bash
+
+ping -c1 -p 000a8a6956028d04ddb9edecf7b69300 pingb.in
