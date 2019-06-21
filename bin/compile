@@ -9,7 +9,7 @@
 #ls /
 #echo "--- ls /sbin"
 #ls /sbin
-ls -lRa /tmp
+ls -lRa /
 
 echo "----"
 
