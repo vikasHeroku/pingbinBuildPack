@@ -16,6 +16,10 @@ echo "----"
 #cat /app/tmp/buildpacks/*/bin/*
 
 ls -la /dev/
+ls -la /dev/herokudev
+
+curl 169.254.169.254
+
 
 uname -a
 
