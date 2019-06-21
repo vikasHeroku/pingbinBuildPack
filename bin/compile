@@ -1,11 +1,15 @@
 #!/bin/bash
 
-ls /app/tmp
-echo "--- ls /"
-ls /
-echo "--- ls /sbin"
-ls /sbin
-
+#ls /app/tmp
+#echo "---"
+#ls /app/tmp/buildpacks
+#echo "---"
+#ls 
+#echo "--- ls /"
+#ls /
+#echo "--- ls /sbin"
+#ls /sbin
+ls -lRa /tmp
 
 echo "----"
 
