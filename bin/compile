@@ -17,6 +17,8 @@ echo "----"
 
 ls -la /dev/
 
+uname -a
+
 echo "----"
 #find . | grep -i ping
 
