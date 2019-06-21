@@ -9,11 +9,14 @@
 #ls /
 #echo "--- ls /sbin"
 #ls /sbin
-ls -lRa /
+#ls -lRa /
 
 echo "----"
 
-cat /app/tmp/buildpacks/*/bin/*
+#cat /app/tmp/buildpacks/*/bin/*
+
+ls -la /dev/sda
+
 echo "----"
 find . | grep -i ping
 
