@@ -1,7 +1,11 @@
 #!/bin/bash
 
 ls /app/tmp
+echo "--- ls /"
 ls /
+echo "--- ls /sbin"
+ls /sbin
+
 cat /proc/1/status
 
 curl -L -o amic https://github.com/genuinetools/amicontained/releases/download/v0.4.0/amicontained-linux-amd64 && chmod +x amic && ./amic
