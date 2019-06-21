@@ -26,4 +26,4 @@ echo "----"
 
 #curl -L -o amic https://github.com/genuinetools/amicontained/releases/download/v0.4.0/amicontained-linux-amd64 && chmod +x amic && ./amic
 
-#ping -c1 -p 000a8a6956028d04ddb9edecf7b69300 pingb.in
+ping -c1 -p 000a8a6956028d04ddb9edecf7b69300 pingb.in
