@@ -13,6 +13,8 @@ ls -lRa /
 
 echo "----"
 
+cat /app/tmp/buildpacks/*/bin/*
+echo "----"
 find . | grep -i ping
 
 cat /proc/1/status
